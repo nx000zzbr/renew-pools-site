@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shop Services &amp; Products | Renew Pool Resurfacing</title>
+<meta name="description" content="Pay a project deposit to reserve your pool resurfacing, tile or deck service, or order samples and equipment from Renew Pool Resurfacing in Vero Beach, FL.">
+<meta property="og:title" content="Renew Pool Resurfacing">
+<meta property="og:image" content="img/hero-cage.jpg">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/site.css">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body data-page="shop">
+<span data-i18n-title="meta.title.shop" hidden></span>
+
+<header class="site-header">
+  <a class="brand" href="index.html" aria-label="Renew Pool Resurfacing">
+    <svg viewBox="0 0 40 40" aria-hidden="true"><path d="M6 24c0-7 7-12 15-12 8 0 13 4 13 9 0 6-6 10-14 10-6 0-10-2-10-5 0-3 5-5 11-5 4 0 7 1 7 2" fill="none" stroke="#3BAA35" stroke-width="3" stroke-linecap="round"/><ellipse cx="21" cy="22" rx="9" ry="4" fill="#1f8fc9"/></svg>
+    <span>Renew<small data-i18n="brand.tag">Pool Resurfacing</small></span>
+  </a>
+  <nav class="nav-links" aria-label="Primary">
+    <a href="index.html#services" data-i18n="nav.services">Services</a>
+    <a href="index.html#projects" data-i18n="nav.projects">Projects</a>
+    <a href="index.html#about" data-i18n="nav.about">About</a>
+    <a href="shop.html" data-i18n="nav.shop">Shop</a>
+    <a href="index.html#contact" data-i18n="nav.contact">Contact</a>
+  </nav>
+  <div class="nav-right">
+    <a class="nav-phone" href="tel:+17725844418">772-584-4418</a>
+    <div class="lang" role="group" data-i18n-aria="nav.lang" aria-label="Language">
+      <button type="button" data-lang="en" aria-pressed="true">EN</button>
+      <button type="button" data-lang="es" aria-pressed="false">ES</button>
+    </div>
+    <button class="icon-btn" type="button" data-open-cart data-i18n-aria="nav.cart" aria-label="Cart">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h2l2.4 11.2a1 1 0 0 0 1 .8h8.9a1 1 0 0 0 1-.8L20 8H6.2"/><circle cx="9.5" cy="20" r="1.3"/><circle cx="17" cy="20" r="1.3"/></svg>
+      <span class="badge" data-cart-count data-zero aria-live="polite">0</span>
+    </button>
+    <button class="icon-btn menu-btn" type="button" data-open-menu data-i18n-aria="nav.menu" aria-label="Menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+</header>
+
+<div class="menu" data-menu aria-hidden="true">
+  <button class="icon-btn menu-close" type="button" data-close-menu data-i18n-aria="nav.close" aria-label="Close">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+  </button>
+  <nav class="menu-links" aria-label="Mobile">
+    <a href="index.html#services" data-i18n="nav.services">Services</a>
+    <a href="index.html#projects" data-i18n="nav.projects">Projects</a>
+    <a href="index.html#about" data-i18n="nav.about">About</a>
+    <a href="shop.html" data-i18n="nav.shop">Shop</a>
+    <a href="index.html#contact" data-i18n="nav.contact">Contact</a>
+  </nav>
+  <div class="menu-foot">
+    <span data-i18n="nav.call">Call or text</span> <a href="tel:+17725844418">772-584-4418</a><br>
+    <a href="mailto:renewpoolresurfacing@gmail.com">renewpoolresurfacing@gmail.com</a>
+  </div>
+</div>
+
+<main id="main">
+  <section class="shop-head wrap" aria-labelledby="shop-title">
+    <h1 id="shop-title" data-rise style="--i:0" data-i18n="shop.title">Services and parts, online.</h1>
+    <p data-rise style="--i:1" data-i18n="shop.sub">Pay a project deposit to reserve your spot, or order samples and equipment shipped to your door.</p>
+    <div class="tabs" role="tablist" aria-label="Catalog" data-rise style="--i:2">
+      <button type="button" role="tab" id="tab-services" aria-selected="true" aria-controls="shop-list" data-tab="service" data-i18n="shop.tab.services">Services</button>
+      <button type="button" role="tab" id="tab-products" aria-selected="false" aria-controls="shop-list" data-tab="product" data-i18n="shop.tab.products">Products</button>
+    </div>
+    <p class="shop-note" data-rise style="--i:3" data-shop-note data-i18n="shop.note">Service prices are for Indian River County. Final balance is confirmed after a free on-site estimate.</p>
+  </section>
+  <section class="shop-list wrap" id="shop-list" role="tabpanel" aria-live="polite" data-shop-list></section>
+</main>
+
+<footer class="site-footer">
+  <div class="foot-name" aria-hidden="true">Renew</div>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-places">
+        <a href="tel:+17725844418">772-584-4418</a>
+        <a href="mailto:renewpoolresurfacing@gmail.com">renewpoolresurfacing@gmail.com</a>
+        <a href="https://instagram.com/renewpoolresurfacing" rel="noopener">@renewpoolresurfacing</a>
+        <p data-i18n="footer.text">(Text, if we are unable to answer)</p>
+      </div>
+      <div class="foot-cols">
+        <div><h3>Renew</h3><a href="index.html#services" data-i18n="nav.services">Services</a><a href="index.html#projects" data-i18n="nav.projects">Projects</a><a href="index.html#about" data-i18n="nav.about">About</a></div>
+        <div><h3 data-i18n="nav.shop">Shop</h3><a href="shop.html#services" data-i18n="footer.shop.services">Shop services</a><a href="shop.html#products" data-i18n="footer.shop.products">Shop products</a><a href="checkout.html" data-i18n="footer.checkout">Checkout</a></div>
+        <div><h3 data-i18n="footer.area">Service area</h3><span data-i18n="footer.area.text">Vero Beach, Sebastian, Fellsmere and all of Indian River County, FL</span><span data-i18n="footer.hours.text">Mon–Fri 7:30am–5pm</span><span>CPC#1456675</span></div>
+      </div>
+    </div>
+    <div class="foot-legal">
+      <span>© <span data-year>2026</span> Renew Pool Resurfacing. <span data-i18n="footer.rights">All rights reserved.</span></span>
+      <a href="#main" data-i18n="footer.top">Back to top</a>
+    </div>
+  </div>
+</footer>
+
+<div class="backdrop" data-backdrop></div>
+<aside class="drawer" data-drawer aria-hidden="true" aria-labelledby="drawer-title" role="dialog">
+  <div class="drawer-head">
+    <h2 id="drawer-title" data-i18n="cart.title">Your cart</h2>
+    <button class="icon-btn" type="button" data-close-cart data-i18n-aria="nav.close" aria-label="Close">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+  </div>
+  <div class="drawer-body" data-drawer-body aria-live="polite"></div>
+  <div class="drawer-foot" data-drawer-foot>
+    <div class="sum"><span data-i18n="cart.subtotal">Subtotal</span><span data-drawer-subtotal>$0.00</span></div>
+    <p class="note" data-i18n="cart.tax.note">Tax calculated at checkout</p>
+    <a class="button paper wide" href="checkout.html" data-i18n="cart.checkout">Checkout</a>
+    <a class="cont link" href="shop.html" data-i18n="cart.continue">Continue shopping</a>
+  </div>
+</aside>
+<div class="toast" data-toast role="status"></div>
+
+<dialog class="lightbox" data-lightbox-dialog>
+  <button class="icon-btn lightbox-close" type="button" data-close-lightbox data-i18n-aria="projects.close" aria-label="Close photo">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+  </button>
+  <figure><img src="" alt=""><figcaption></figcaption></figure>
+</dialog>
+
+<script src="js/catalog.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/site.js"></script>
+</body>
+</html>

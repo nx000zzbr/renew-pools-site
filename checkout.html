@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Checkout | Renew Pool Resurfacing</title>
+<meta name="robots" content="noindex">
+<meta name="description" content="Secure checkout for Renew Pool Resurfacing services and products.">
+<meta property="og:title" content="Renew Pool Resurfacing">
+<meta property="og:image" content="img/hero-cage.jpg">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/site.css">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body data-page="checkout">
+<span data-i18n-title="meta.title.checkout" hidden></span>
+
+<header class="site-header">
+  <a class="brand" href="index.html" aria-label="Renew Pool Resurfacing">
+    <svg viewBox="0 0 40 40" aria-hidden="true"><path d="M6 24c0-7 7-12 15-12 8 0 13 4 13 9 0 6-6 10-14 10-6 0-10-2-10-5 0-3 5-5 11-5 4 0 7 1 7 2" fill="none" stroke="#3BAA35" stroke-width="3" stroke-linecap="round"/><ellipse cx="21" cy="22" rx="9" ry="4" fill="#1f8fc9"/></svg>
+    <span>Renew<small data-i18n="brand.tag">Pool Resurfacing</small></span>
+  </a>
+  <nav class="nav-links" aria-label="Primary">
+    <a href="index.html#services" data-i18n="nav.services">Services</a>
+    <a href="index.html#projects" data-i18n="nav.projects">Projects</a>
+    <a href="index.html#about" data-i18n="nav.about">About</a>
+    <a href="shop.html" data-i18n="nav.shop">Shop</a>
+    <a href="index.html#contact" data-i18n="nav.contact">Contact</a>
+  </nav>
+  <div class="nav-right">
+    <a class="nav-phone" href="tel:+17725844418">772-584-4418</a>
+    <div class="lang" role="group" data-i18n-aria="nav.lang" aria-label="Language">
+      <button type="button" data-lang="en" aria-pressed="true">EN</button>
+      <button type="button" data-lang="es" aria-pressed="false">ES</button>
+    </div>
+    <button class="icon-btn" type="button" data-open-cart data-i18n-aria="nav.cart" aria-label="Cart">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h2l2.4 11.2a1 1 0 0 0 1 .8h8.9a1 1 0 0 0 1-.8L20 8H6.2"/><circle cx="9.5" cy="20" r="1.3"/><circle cx="17" cy="20" r="1.3"/></svg>
+      <span class="badge" data-cart-count data-zero aria-live="polite">0</span>
+    </button>
+    <button class="icon-btn menu-btn" type="button" data-open-menu data-i18n-aria="nav.menu" aria-label="Menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+</header>
+
+<div class="menu" data-menu aria-hidden="true">
+  <button class="icon-btn menu-close" type="button" data-close-menu data-i18n-aria="nav.close" aria-label="Close">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+  </button>
+  <nav class="menu-links" aria-label="Mobile">
+    <a href="index.html#services" data-i18n="nav.services">Services</a>
+    <a href="index.html#projects" data-i18n="nav.projects">Projects</a>
+    <a href="index.html#about" data-i18n="nav.about">About</a>
+    <a href="shop.html" data-i18n="nav.shop">Shop</a>
+    <a href="index.html#contact" data-i18n="nav.contact">Contact</a>
+  </nav>
+  <div class="menu-foot">
+    <span data-i18n="nav.call">Call or text</span> <a href="tel:+17725844418">772-584-4418</a><br>
+    <a href="mailto:renewpoolresurfacing@gmail.com">renewpoolresurfacing@gmail.com</a>
+  </div>
+</div>
+
+<main id="main" class="checkout wrap">
+  <section class="checkout-empty" data-checkout-empty hidden>
+    <h1 data-rise style="--i:0" data-i18n="checkout.empty.title">Nothing to check out yet.</h1>
+    <p data-rise style="--i:1" data-i18n="checkout.empty.sub">Add a service or product to your cart first.</p>
+    <a class="button" href="shop.html" data-rise style="--i:2" data-i18n="checkout.empty.cta">Go to the shop</a>
+  </section>
+
+  <section class="checkout-confirm" data-checkout-confirm hidden aria-live="polite">
+    <div class="confirm-grid">
+      <div class="confirm-text">
+        <h1 data-i18n="confirm.title">Thank you. We are on it.</h1>
+        <p class="confirm-num"><span data-i18n="confirm.number">Order number</span> <strong data-order-number>RP-000000-0000</strong></p>
+        <h2 data-i18n="confirm.next">What happens next</h2>
+        <ol class="next-steps">
+          <li data-i18n="confirm.next1">We will call or text you within one business day to confirm details.</li>
+          <li data-i18n="confirm.next2">For services, we schedule a free on-site visit and confirm your final balance.</li>
+          <li data-i18n="confirm.next3">Products ship in 3–5 business days.</li>
+        </ol>
+        <p class="confirm-contact"><span data-i18n="confirm.questions">Questions? Call or text</span> <a class="link" href="tel:+17725844418">772-584-4418</a></p>
+        <a class="button ghost" href="index.html" data-i18n="confirm.home">Back to home</a>
+      </div>
+      <aside class="summary">
+        <h2 data-i18n="checkout.summary">Order summary</h2>
+        <div data-confirm-summary></div>
+      </aside>
+    </div>
+  </section>
+
+  <div class="checkout-layout" data-checkout-layout hidden>
+    <form class="checkout-form" data-checkout-form novalidate autocomplete="on">
+      <h1 data-rise style="--i:0" data-i18n="checkout.title">Almost there.</h1>
+      <section class="block">
+        <h2 data-i18n="checkout.step1">Contact &amp; pool address</h2>
+        <div class="form-field"><label class="label" for="k-name" data-i18n="checkout.name">checkout.name</label><input class="field" id="k-name" name="name" type="text" autocomplete="name" required><span class="err" data-err-for="name"></span></div>
+        <div class="form-row two">
+          <div class="form-field"><label class="label" for="k-email" data-i18n="checkout.email">checkout.email</label><input class="field" id="k-email" name="email" type="email" autocomplete="email" required><span class="err" data-err-for="email"></span></div>
+          <div class="form-field"><label class="label" for="k-phone" data-i18n="checkout.phone">checkout.phone</label><input class="field" id="k-phone" name="phone" type="tel" autocomplete="tel" required><span class="err" data-err-for="phone"></span></div>
+        </div>
+        <div class="form-field"><label class="label" for="k-address" data-i18n="checkout.address">checkout.address</label><input class="field" id="k-address" name="address" type="text" autocomplete="street-address" required><span class="err" data-err-for="address"></span></div>
+        <div class="form-row two">
+          <div class="form-field"><label class="label" for="k-city" data-i18n="checkout.city">checkout.city</label><input class="field" id="k-city" name="city" type="text" autocomplete="address-level2" required><span class="err" data-err-for="city"></span></div>
+          <div class="form-field"><label class="label" for="k-zip" data-i18n="checkout.zip">checkout.zip</label><input class="field" id="k-zip" name="zip" type="text" inputmode="numeric" autocomplete="postal-code" maxlength="5" required><span class="err" data-err-for="zip"></span></div>
+        </div>
+      </section>
+      <section class="block" data-schedule>
+        <h2 data-i18n="checkout.step2">Preferred schedule</h2>
+        <div class="form-row two">
+          <div class="form-field"><label class="label" for="k-date" data-i18n="checkout.date">checkout.date</label><input class="field" id="k-date" name="date" type="date" ><span class="err" data-err-for="date"></span></div>
+          <div class="form-field"><label class="label" for="k-window" data-i18n="checkout.window">Preferred time</label>
+            <select class="field" id="k-window" name="window"><option value="am" data-i18n="checkout.window.am">Morning (7:30–12)</option><option value="pm" data-i18n="checkout.window.pm">Afternoon (12–5)</option><option value="any" data-i18n="checkout.window.any">Any time</option></select></div>
+        </div>
+        <p class="hint" data-i18n="checkout.schedule.note">We will call to confirm the date after reviewing your order.</p>
+      </section>
+      <section class="block">
+        <h2 data-i18n="checkout.step3">Payment</h2>
+        <p class="demo" data-i18n="checkout.card.demo">Demo checkout: no card is charged. Use 4242 4242 4242 4242.</p>
+        <div class="form-field"><label class="label" for="k-cardName" data-i18n="checkout.card.name">checkout.card.name</label><input class="field" id="k-cardName" name="cardName" type="text" autocomplete="cc-name" required><span class="err" data-err-for="cardName"></span></div>
+        <div class="form-field"><label class="label" for="k-cardNumber" data-i18n="checkout.card.number">checkout.card.number</label><input class="field" id="k-cardNumber" name="cardNumber" type="text" inputmode="numeric" autocomplete="cc-number" placeholder="4242 4242 4242 4242" required><span class="err" data-err-for="cardNumber"></span></div>
+        <div class="form-row two">
+          <div class="form-field"><label class="label" for="k-exp" data-i18n="checkout.card.exp">checkout.card.exp</label><input class="field" id="k-exp" name="exp" type="text" inputmode="numeric" autocomplete="cc-exp" data-i18n-placeholder="checkout.card.exp.ph" maxlength="5" required><span class="err" data-err-for="exp"></span></div>
+          <div class="form-field"><label class="label" for="k-cvc" data-i18n="checkout.card.cvc">checkout.card.cvc</label><input class="field" id="k-cvc" name="cvc" type="text" inputmode="numeric" autocomplete="cc-csc" maxlength="4" required><span class="err" data-err-for="cvc"></span></div>
+        </div>
+        <p class="form-status err" data-checkout-status hidden></p>
+        <button class="button wide" type="submit" data-place data-i18n="checkout.place">Place order</button>
+        <p class="hint" data-i18n="checkout.secure">Secure checkout · Your card details never leave this page</p>
+      </section>
+    </form>
+    <aside class="summary">
+      <h2 data-i18n="checkout.summary">Order summary</h2>
+      <div data-summary></div>
+      <a class="link small-link" href="shop.html" data-i18n="cart.continue">Continue shopping</a>
+    </aside>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="foot-name" aria-hidden="true">Renew</div>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-places">
+        <a href="tel:+17725844418">772-584-4418</a>
+        <a href="mailto:renewpoolresurfacing@gmail.com">renewpoolresurfacing@gmail.com</a>
+        <a href="https://instagram.com/renewpoolresurfacing" rel="noopener">@renewpoolresurfacing</a>
+        <p data-i18n="footer.text">(Text, if we are unable to answer)</p>
+      </div>
+      <div class="foot-cols">
+        <div><h3>Renew</h3><a href="index.html#services" data-i18n="nav.services">Services</a><a href="index.html#projects" data-i18n="nav.projects">Projects</a><a href="index.html#about" data-i18n="nav.about">About</a></div>
+        <div><h3 data-i18n="nav.shop">Shop</h3><a href="shop.html#services" data-i18n="footer.shop.services">Shop services</a><a href="shop.html#products" data-i18n="footer.shop.products">Shop products</a><a href="checkout.html" data-i18n="footer.checkout">Checkout</a></div>
+        <div><h3 data-i18n="footer.area">Service area</h3><span data-i18n="footer.area.text">Vero Beach, Sebastian, Fellsmere and all of Indian River County, FL</span><span data-i18n="footer.hours.text">Mon–Fri 7:30am–5pm</span><span>CPC#1456675</span></div>
+      </div>
+    </div>
+    <div class="foot-legal">
+      <span>© <span data-year>2026</span> Renew Pool Resurfacing. <span data-i18n="footer.rights">All rights reserved.</span></span>
+      <a href="#main" data-i18n="footer.top">Back to top</a>
+    </div>
+  </div>
+</footer>
+
+<div class="backdrop" data-backdrop></div>
+<aside class="drawer" data-drawer aria-hidden="true" aria-labelledby="drawer-title" role="dialog">
+  <div class="drawer-head">
+    <h2 id="drawer-title" data-i18n="cart.title">Your cart</h2>
+    <button class="icon-btn" type="button" data-close-cart data-i18n-aria="nav.close" aria-label="Close">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+  </div>
+  <div class="drawer-body" data-drawer-body aria-live="polite"></div>
+  <div class="drawer-foot" data-drawer-foot>
+    <div class="sum"><span data-i18n="cart.subtotal">Subtotal</span><span data-drawer-subtotal>$0.00</span></div>
+    <p class="note" data-i18n="cart.tax.note">Tax calculated at checkout</p>
+    <a class="button paper wide" href="checkout.html" data-i18n="cart.checkout">Checkout</a>
+    <a class="cont link" href="shop.html" data-i18n="cart.continue">Continue shopping</a>
+  </div>
+</aside>
+<div class="toast" data-toast role="status"></div>
+
+<dialog class="lightbox" data-lightbox-dialog>
+  <button class="icon-btn lightbox-close" type="button" data-close-lightbox data-i18n-aria="projects.close" aria-label="Close photo">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+  </button>
+  <figure><img src="" alt=""><figcaption></figcaption></figure>
+</dialog>
+
+<script src="js/catalog.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/site.js"></script>
+<script src="js/checkout.js"></script>
+</body>
+</html>
